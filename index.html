@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheLabPhysician</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2E8B57);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px 0;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TheLabPhysician</h1>
+        <p>Insights and education in laboratory medicine</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="grid-item">
+            <h2>About Us</h2>
+            <p>TheLabPhysician is a platform for lab professionals, sharing insights, case studies, and education in laboratory medicine.</p>
+        </section>
+        <section id="resources" class="grid">
+            <div class="grid-item">
+                <h3>Case Studies</h3>
+                <p>Learn from real-life diagnostic challenges and solutions.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Articles</h3>
+                <p>Stay updated with the latest in laboratory medicine.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Tools</h3>
+                <p>Access resources to enhance clinical decision-making.</p>
+            </div>
+        </section>
+        <section id="contact" class="grid-item">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:contact@thelabphysician.com">contact@thelabphysician.com</a></p>
+            <p>Follow us on <a href="https://facebook.com" target="_blank">Facebook</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 TheLabPhysician. All rights reserved.</p>
+    </footer>
+</body>
+</html>
